@@ -5,7 +5,7 @@ default: slides.html
 # All reveal.js configuration can be controlled using '-V' options below.
 # https://github.com/hakimel/reveal.js#configuration
 
-%.html: %.md
+%.html: %.md Makefile
 	pandoc \
 		--standalone \
 		-t revealjs \
